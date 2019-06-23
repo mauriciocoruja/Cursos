@@ -17,5 +17,10 @@ public class CriaConta {
         System.out.println("Na segunda conta tem R$"+segundaConta.saldo);
         System.out.println("Na primeira conta tem R$"+primeirConta.saldo);
 
+        System.out.println("\n---------\n");
+
+        /*Exemplo para mostrar o valor default de uma variavel quando instanciada*/
+        System.out.println("Numero da agência: "+primeirConta.agencia);
+        System.out.println("Numero da conta: "+primeirConta.numero);
     }
 }
