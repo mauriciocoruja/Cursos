@@ -17,8 +17,12 @@ public class TestaMetodo {
         contaDoMauricio.titular  = "Mauricio";
         contaDoMauricio.deposita(1000);
 
-        double valorTransferencia = contaDoMauricio.transfere(500, contaDoCoruja);
-        System.out.println(contaDoCoruja.titular+" recebeu R$"+valorTransferencia+" de "+contaDoMauricio.titular);
+        boolean valorTransferencia = contaDoMauricio.transfere(2000, contaDoCoruja);
+        if (valorTransferencia) {
+            System.out.println(contaDoCoruja.titular+" recebeu dinheiro de "+contaDoMauricio.titular);
+        }else {
+            System.out.println("Saldo insuficiente");
+        }
 
         System.out.println(contaDoCoruja.titular + " | saldo de R$" + contaDoCoruja.saldo);
         System.out.println(contaDoMauricio.titular + " | saldo R$" + contaDoMauricio.saldo);

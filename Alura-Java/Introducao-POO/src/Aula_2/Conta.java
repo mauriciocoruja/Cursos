@@ -19,13 +19,12 @@ public class Conta {
         }
     }
 
-    public double transfere(double valor, Conta destino){
+    public boolean transfere(double valor, Conta destino){
         if (this.saldo >= valor) {
             this.saldo -= valor;
             destino.deposita(valor);
-        }else {
-            System.out.println("Você não tem saldo");
+            return true;
         }
-        return valor;
+        return false;
     }
 }
