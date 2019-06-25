@@ -17,7 +17,7 @@ public class TestaMetodo {
         contaDoMauricio.titular  = "Mauricio";
         contaDoMauricio.deposita(1000);
 
-        boolean valorTransferencia = contaDoMauricio.transfere(2000, contaDoCoruja);
+        boolean valorTransferencia = contaDoMauricio.transfere(1000, contaDoCoruja);
         if (valorTransferencia) {
             System.out.println(contaDoCoruja.titular+" recebeu dinheiro de "+contaDoMauricio.titular);
         }else {
