@@ -24,8 +24,4 @@ public class CodificadorController {
         return repository.save(codificador);
     }
 
-   /* @DeleteMapping
-    public void delete(){
-        delete();
-    }*/
 }
