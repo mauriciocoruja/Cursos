@@ -24,5 +24,8 @@ public class TestaBanco {
         System.out.println(nathalia.titular.nome);
         System.out.println(nathalia.titular.cpf);
 
+        contaMauricio.deposita(500);
+        System.out.println(contaMauricio.getSaldo());
+
     }
 }
