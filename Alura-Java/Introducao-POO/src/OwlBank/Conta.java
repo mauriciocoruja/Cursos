@@ -1,7 +1,7 @@
 package OwlBank;
 
 public class Conta {
-    public double saldo;
+    private double saldo;
     public int agencia;
     public int numero;
     Cliente titular;
@@ -23,5 +23,9 @@ public class Conta {
             return true;
         }
         return false;
+    }
+
+    public double getSaldo() {
+        return saldo;
     }
 }
